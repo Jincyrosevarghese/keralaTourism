@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.logo{
+height: 50px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white !important;
+}
+.menu{
+    margin-top: 20px;
+}
+
+.imageclass{
+    height: 560px;
+    width: 100%;
+}
+.mylogin{
+    border: solid 2px rgb(202, 206, 207);
+    margin-top: 20%;
+    padding: 20px;
+    padding-bottom: 10px;
+    width:280px;
+    color: rgb(240, 240, 240);
+}
+.rowclass
+{
+    margin-top: 20%;
+}
+.inputdiv{
+    width: max-content;
+}
+
+body{
+    background-size: cover;
+}
+
+  
+ 
