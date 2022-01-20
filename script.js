@@ -44,9 +44,7 @@ function validatepwd() {
     let strongPassword = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
     let PasswordParameter = document.getElementById("pwd");
     let strengthBadge = document.getElementById('StrengthDisp');   
-    if (strongPassword.test(PasswordParameter.value)) {
-        strengthBadge.style.backgroundColor = "green";
-        strengthBadge.textContent = 'Strong Password';
+    if (strongPassword.test(PasswordParameter.value)) {      
         return true;
     }
     else {
