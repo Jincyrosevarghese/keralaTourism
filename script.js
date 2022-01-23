@@ -28,7 +28,7 @@ function validate() {
         strengthBadge.textContent = 'Strong Password';
         pwdflag = true;
     } else if (mediumPassword.test(PasswordParameter.value)) {
-        strengthBadge.style.backgroundColor = 'blue';
+        strengthBadge.style.backgroundColor = 'orange';
         strengthBadge.textContent = 'Medium strength Password';
         pwdflag = true;
     } else {
