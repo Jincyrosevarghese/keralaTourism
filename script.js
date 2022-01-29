@@ -8,8 +8,8 @@ function validate() {
     let strengthBadge = document.getElementById('StrengthDisp');
     let phoneflag = false;
     let pwdflag = false;
-    let emailflag=false;
-    let emailregx=/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let emailflag = false;
+    let emailregx = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     let regex = /^([0-9]{3})([\.-\s]?)([0-9]{3})([\.-\s]?)([0-9]{4})$/;
     if (emailregx.test(email.value)) {
         error1.innerHTML = "email is valid";
@@ -51,7 +51,7 @@ function validate() {
         strengthBadge.style.backgroundColor = 'red';
         strengthBadge.textContent = 'Weak Password';
     }
-    if (phoneflag && pwdflag &&emailflag)
+    if (phoneflag && pwdflag && emailflag)
         return true;
     else return false;
 }
@@ -59,8 +59,8 @@ function validate() {
 function validatepwd() {
     let strongPassword = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
     let PasswordParameter = document.getElementById("pwd");
-    let strengthBadge = document.getElementById('StrengthDisp');   
-    if (strongPassword.test(PasswordParameter.value)) {      
+    let strengthBadge = document.getElementById('StrengthDisp');
+    if (strongPassword.test(PasswordParameter.value)) {
         return true;
     }
     else {
